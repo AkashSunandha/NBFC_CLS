@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-27T10:36:12 IST" name="Default suite" finished-at="2024-11-27T10:37:40 IST" duration-ms="88267">
+  <suite started-at="2024-11-28T14:21:39 IST" name="Default suite" finished-at="2024-11-28T14:26:44 IST" duration-ms="305108">
     <groups>
     </groups>
-    <test started-at="2024-11-27T10:36:12 IST" name="Default test" finished-at="2024-11-27T10:37:40 IST" duration-ms="88267">
+    <test started-at="2024-11-28T14:21:39 IST" name="Default test" finished-at="2024-11-28T14:26:44 IST" duration-ms="305108">
       <class name="com.test.Customer.AllScenarios_Cust_CustRegister">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustRegister@7651218e]" started-at="2024-11-27T10:36:12 IST" name="reference" finished-at="2024-11-27T10:36:12 IST" duration-ms="41" status="PASS">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustRegister@7651218e]" started-at="2024-11-28T14:21:39 IST" name="reference" finished-at="2024-11-28T14:21:39 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="customerRegister(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustRegister@7651218e]" started-at="2024-11-27T10:36:13 IST" name="customerRegister" data-provider="TestData" finished-at="2024-11-27T10:37:40 IST" duration-ms="87447" status="PASS">
+        <test-method signature="customerRegister(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustRegister@7651218e]" started-at="2024-11-28T14:21:39 IST" name="customerRegister" data-provider="TestData" finished-at="2024-11-28T14:26:44 IST" duration-ms="304407" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{=, invalidCustId1=10300001480, invalidCustId2=1030000148060, loginUserName=akash, loginValidPassword=aka@123, pcRegFormName=qwerty, pcRegFormPcName=zxcvb, Run=Yes, TestScenario=TC_CustomerRegisterModule, validCustId=103000014806}]]>
+                <![CDATA[{=, custName=raj, invalidCustId1=10300001480, invalidCustId2=1030000148060, invalidCustId3=a&j^$df*%bc, loginUserName=akash, loginValidPassword=aka@123, pcRegFormName=qwerty, pcRegFormPcName=zxcvb, Run=Yes, TestScenario=TC_CustomerRegisterModule, validCustId=102000015729}]]>
               </value>
             </param>
             <param index="1">

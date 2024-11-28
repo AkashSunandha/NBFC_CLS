@@ -1,10 +1,21 @@
-[INFO ] 2024-11-27 10:36:13.480 [main] Log - *** Running test method TC_CustomerRegisterModule...
-[INFO ] 2024-11-27 10:36:17.232 [main] Log - Driver has initialized successfully for firefoxbrowser
-[INFO ] 2024-11-27 10:36:29.905 [main] Log - PC Registered Successfully!
-[INFO ] 2024-11-27 10:36:41.167 [main] Log - Valid Password, Validated Successfully!
-[INFO ] 2024-11-27 10:36:52.249 [main] Log - Customer Register Window loaded Successfully!
-[INFO ] 2024-11-27 10:37:02.209 [main] Log - "Please Fill the Required Details " is displayed when clicked on "View button" without entering CustId
-[INFO ] 2024-11-27 10:37:08.151 [main] Log - All parameters present
-[INFO ] 2024-11-27 10:37:12.597 [main] Log - Error message displayed for incorrect Customer ID(< 12 digits)
-[INFO ] 2024-11-27 10:37:26.456 [main] Log - Customer Fetched Using Valid Customer ID, Successfully
-[INFO ] 2024-11-27 10:37:40.534 [main] Log - User SignedOut
+[INFO ] 2024-11-28 14:21:39.947 [main] Log - *** Running test method TC_CustomerRegisterModule...
+[INFO ] 2024-11-28 14:21:44.572 [main] Log - Driver has initialized successfully for firefoxbrowser
+[INFO ] 2024-11-28 14:21:56.704 [main] Log - PC Registered Successfully!
+[INFO ] 2024-11-28 14:22:08.674 [main] Log - Valid Password, Validated Successfully!
+[INFO ] 2024-11-28 14:22:20.519 [main] Log - TC No. - 01 --> Customer Register Window loaded Successfully!
+[INFO ] 2024-11-28 14:22:24.870 [main] Log - TC No. - 02 --> "Please Fill the Required Details " is displayed when clicked on "View button" without entering CustId
+[INFO ] 2024-11-28 14:22:30.539 [main] Log - TC No. - 04 --> All parameters (Share, Loan, Debenuture, Deposits, General, Institutional, Insurance, Other Charge, Close, Direct & Indirect Check Box) present
+[INFO ] 2024-11-28 14:22:34.949 [main] Log - TC No. - 03 & 06 --> Error message displayed for incorrect Customer ID(< 12 digits)
+[INFO ] 2024-11-28 14:22:48.738 [main] Log - TC No. - 05 & 06 --> Customer Fetched Using Valid Customer ID, Successfully
+[INFO ] 2024-11-28 14:22:49.281 [main] Log - TC No. - 14 --> Grid Column Names (Product Name, Account Number, Nature, Start Date, Amount, DueDate, Dur, Balance, DueAmount, ClosedOn, Remarks, D/I, P/S, Pending Amount) are displayed
+[INFO ] 2024-11-28 14:23:01.176 [main] Log - TC No. - 16 --> Error message displayed for incorrect Customer ID(Non numeric)
+[INFO ] 2024-11-28 14:23:19.809 [main] Log - TC No. - 07 --> Popup window Displayed & Search Button Functionality validated, Successfully!
+[INFO ] 2024-11-28 14:24:16.812 [main] Log - TC No. - 08 --> Multiple Search Parameters to fetch Customer Details validated, Successfully!
+[INFO ] 2024-11-28 14:24:23.399 [main] Log - TC No. - 09 --> View & Cancel button Available
+[INFO ] 2024-11-28 14:24:46.017 [main] Log - TC No. - 10 --> Loan account details of the customer is displayed in grid format
+[INFO ] 2024-11-28 14:25:07.778 [main] Log - TC No. - 11 --> Deposit account details of the customer is displayed in grid format
+[INFO ] 2024-11-28 14:25:25.081 [main] Log - TC No. - 12 & 17 --> Both Loan & Deposit account details of the customer is displayed in grid format
+[INFO ] 2024-11-28 14:25:46.711 [main] Log - TC No. - 13 --> Customer details is displayed in grid format
+[INFO ] 2024-11-28 14:26:25.934 [main] Log - Customer Accounts details is displayed in grid format
+[INFO ] 2024-11-28 14:26:31.394 [main] Log - TC No. - 15 --> All displayed data is cleared, returned Customer Register window.
+[INFO ] 2024-11-28 14:26:43.959 [main] Log - User SignedOut
