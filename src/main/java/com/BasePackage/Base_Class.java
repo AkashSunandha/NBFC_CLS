@@ -9,7 +9,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
+import com.Utility.Log;
+import com.aventstack.extentreports.Status;
+import com.extentReports.ExtentTestManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,6 +30,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.Page_Repositary.PageRepositary_Cust_CustSearch;
 import com.Utility.Log;
+import com.extentReports.ExtentTestManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -86,7 +89,8 @@ public class Base_Class {
 //			FirefoxOptions options1 = new FirefoxOptions();
 //			WebDriverManager.firefoxdriver().setup();
 //			//System.setProperty("webdriver.gecko.driver", "./Drivers\\geckodriver.exe");
-//			driver = new FirefoxDriver(options1);			
+//			driver = new FirefoxDriver(options1);
+			ExtentTestManager.getTest().log(Status.PASS, "Firefox Driver & Application Launched successfully.");
 			break;
 
 		default:
@@ -101,16 +105,14 @@ public class Base_Class {
 //		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 //		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 //		Thread.sleep(9000);
-//		Pagetitle = driver.getTitle();
-//		Log.info("Title is displayed : "+Pagetitle);
+		Pagetitle = driver.getTitle();
+		Log.info("Title is displayed : "+Pagetitle);
 //		input(L_username, UserName);
 //		input(L_password, Password);
 //		click(L_SignIn);
 //		Thread.sleep(4000);
 //		click(DesktopNot);
 //		Thread.sleep(1000);
-
-
 	}
 
 
@@ -150,9 +152,12 @@ public class Base_Class {
 	public static void AcceptAlert()
 	{
 		driver.switchTo().alert().accept();
-		//driver.switchTo().alert().dismiss();
-
-		
+		//driver.switchTo().alert().dismiss();	
+	}
+	public static void DismissAlert()
+	{
+		//driver.switchTo().alert().accept();
+		driver.switchTo().alert().dismiss();	
 	}
 
 	public static  void INclick(By element) throws InterruptedException {

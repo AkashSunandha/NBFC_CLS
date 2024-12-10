@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-29T12:24:03 IST" name="Default suite" finished-at="2024-11-29T12:27:04 IST" duration-ms="181263">
+  <suite started-at="2024-12-10T12:33:36 IST" name="Default suite" finished-at="2024-12-10T12:46:56 IST" duration-ms="799844">
     <groups>
     </groups>
-    <test started-at="2024-11-29T12:24:03 IST" name="Default test" finished-at="2024-11-29T12:27:04 IST" duration-ms="181263">
+    <test started-at="2024-12-10T12:33:36 IST" name="Default test" finished-at="2024-12-10T12:46:56 IST" duration-ms="799844">
       <class name="com.test.Customer.AllScenarios_Cust_CustSearch">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustSearch@68d6972f]" started-at="2024-11-29T12:24:03 IST" name="reference" finished-at="2024-11-29T12:24:03 IST" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustSearch@45be7cd5]" started-at="2024-12-10T12:33:36 IST" name="reference" finished-at="2024-12-10T12:33:36 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="customerSearch(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustSearch@68d6972f]" started-at="2024-11-29T12:24:03 IST" name="customerSearch" data-provider="TestData" finished-at="2024-11-29T12:27:04 IST" duration-ms="180549" status="PASS">
+        <test-method signature="customerSearch(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustSearch@45be7cd5]" started-at="2024-12-10T12:33:37 IST" name="customerSearch" data-provider="TestData" finished-at="2024-12-10T12:46:56 IST" duration-ms="799194" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{=, invalidAadhaar=98765432, invalidMobileNum1=888999000, invalidMobileNum2=99900088801, loginInValidPassword=fghh, loginUserName=akash, loginValidPassword=aka@123, nameAlphanumeric=ABCD12345, nameNumeric=1234567890, pcRegFormName=qwerty, pcRegFormPcName=zxcvb, Run=Yes, TestScenario=TC_CustomerSearchModule, validMobileNum=9846968244, validName=MANU}]]>
+                <![CDATA[{alphanumericLastName=A1S2H3, alphanumericPanNum=VFRUJ1234U, authorizedCustomer=102000016378, custIDAttachments=103000016369, docNum=12222, freezeAlphabetComment=Customer Freezed, freezeAlphanumericComment=1a2v3g4h, freezeFutureDate=01/01/2300, freezeNumericComment=12345, houseNameAlphabet= ODAMPARA HOUSE , houseNameAlphanumeric=4A5, houseNameNumeric=252522, inactiveCustomer=102000007421, invalidAadhaar=98765432, invalidMobileNum1=888999000, invalidMobileNum2=99900088801, invalidName=hero, loginInValidPassword=fghh, loginUserName=akash, loginValidPassword=aka@123, nameAlphanumeric=ABCD12345, nameNumeric=1234567890, nameSpecialChar=!@#$%^&*, numericLastName=12345, pcRegFormName=qwerty, pcRegFormPcName=zxcvb, Run=Yes, specialCharacterLastName=!@#$%, TestScenario=Customer Search Module, validCustId=102000015879, validCustId2=102000016383, validLastName=ABC, validMobileNum=9846968244, validName=MANU}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@289fdb08]]>
+                <![CDATA[org.testng.TestRunner@6eb82908]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerSearch -->
+        <test-method signature="customerSearch(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Customer.AllScenarios_Cust_CustSearch@45be7cd5]" started-at="2024-12-10T12:46:56 IST" name="customerSearch" data-provider="TestData" finished-at="2024-12-10T12:46:56 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{alphanumericLastName=, alphanumericPanNum=, authorizedCustomer=, custIDAttachments=, docNum=, freezeAlphabetComment=, freezeAlphanumericComment=, freezeFutureDate=, freezeNumericComment=, houseNameAlphabet=, houseNameAlphanumeric=, houseNameNumeric=, inactiveCustomer=, invalidAadhaar=, invalidMobileNum1=, invalidMobileNum2=, invalidName=, loginInValidPassword=, loginUserName=, loginValidPassword=, nameAlphanumeric=, nameNumeric=, nameSpecialChar=, numericLastName=, pcRegFormName=, pcRegFormPcName=, Run=, specialCharacterLastName=, TestScenario=, validCustId=, validCustId2=, validLastName=, validMobileNum=, validName=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6eb82908]]>
               </value>
             </param>
           </params>
