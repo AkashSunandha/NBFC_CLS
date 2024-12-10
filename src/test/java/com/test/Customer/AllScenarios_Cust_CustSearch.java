@@ -136,7 +136,7 @@ public class AllScenarios_Cust_CustSearch extends Base_Class{
 				Thread.sleep(5000);
 				custSrchMthds.signOut();
 				
-				// EndTest
+			// EndTest
 				ExtentTestManager.endTest();
 				ExtentManager.getInstance().flush();
 			}		
