@@ -450,7 +450,7 @@ public class Customer_CustomerRegister extends Base_Class{
 		ExtentTestManager.getTest().log(Status.PASS, "Step:07 - Click on View button");
 		Log.info("Step:07 - Click on View button");
 		
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		boolean flag = ElementDisplayed(custRgstr.custLoan);
 		if(flag == true) {
 			ExtentTestManager.getTest().log(Status.PASS, "Expected Result: Loan account details of the customer is displayed in grid format");
