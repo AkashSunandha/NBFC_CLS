@@ -55,54 +55,88 @@ public class AllScenarios_Cust_CustSearch extends Base_Class{
 				Log.info("*** Running test method " + testdata.get("TestScenario").toString() + "...");
 				context.setAttribute("fileName", "Login");
 
-				//TC No. - 02 --> Application launch
+				//TC No. - 01 --> Application launch
 				Base_Class.SetUp();
 				Thread.sleep(2000);
 								
 				//PC Registration
 				custSrchMthds.pcRegistration(testdata, context);
 				
-				//TC No. - 04 -->User Login PATH-InValid Password
+				//TC No. - 03, 91 --> Invalid Login - Incorrect Password
 				custSrchMthds.userLoginInValidPaswrd(testdata, context);
 
-				//TC No. - 03 -->User Login PATH-Valid Password
+				//TC No. - 02 --> Valid Login
 				custSrchMthds.userLoginValidPaswrd(testdata, context);
 
-				//TC No. - 05 -->Customer Search Window
-				Thread.sleep(3000);
+				//TC No. - 04, 95 --> Navigate to Customer Search
+				Thread.sleep(4000);
 				custSrchMthds.customerSearchWindow();
 				
-				//TC No. - 08 & TC - 13-->Fetch Customer by Mobile No
-				custSrchMthds.searchByMobileInvalid1(testdata, context);
+				//TC No. - 05, 09 & TC - 13--> Mobile Field - BVA Validations
+				custSrchMthds.mobileFieldBVA(testdata, context);
 				
-				custSrchMthds.searchByMobileInvalid2(testdata, context);
+				//TC No. - 06, 22, 24, 27, 32, 39, 41, 42, 52, 54, 56, 65, 69, 84, 97, 98, 99, 106, 107, 120 --> Fetch Customer by Name
+				custSrchMthds.nameFieldECP(testdata, context);
 				
-				custSrchMthds.searchByMobileValid(testdata, context);
-				
-				//TC No. - 09 -->Fetch Customer by Name
-				custSrchMthds.searchByNameNumeric(testdata, context);
-				
-				custSrchMthds.searchByNameAlpanumeric(testdata, context);
-				
-				custSrchMthds.searchByValidName(testdata, context);
-				
-				//TC No. - 11 -->Fetch Customers Without Inputs
+				//TC No. - 07, 55 --> Fetch Customers Without Inputs
 				custSrchMthds.searchWithoutInputs();
 				
-				//TC No. - 12 -->Fetch Customer by Invalid AADHAAR
+				//TC No. - 08 --> Invalid Aadhaar Number
 				custSrchMthds.searchByInvalidAadhaar(testdata, context);
 			
-				//TC No. - 14 --> Clear Functionality
+				//TC No. - 10 --> Clear Functionality
 				custSrchMthds.clearFunctionality(testdata, context);
 				
-				//TC No. - 15 -->Fetch All Institutions
+				//TC No. - 11 --> Toggle Is Institutional Checkbox
 				custSrchMthds.fetchInstitutions();
 				
-				//Sign out
+				//TC No. - 12 --> Verify the field House Name
+				custSrchMthds.houseName(testdata, context);
+				
+				//TC No. - 13, 14 & 16 --> Verify the field Doc Type & Doc No
+//				custSrchMthds.docTypeAndDocNo(testdata, context);
+				
+				//TC No. - 15 --> Verify the field PAN No
+				custSrchMthds.panNum(testdata, context);
+				
+				//TC No. - 17 --> Check KYC Compliant Only Check box
+				custSrchMthds.kycCompliantOnly();
+				
+				//TC No. - 18 --> Check Active Only Check box
+				custSrchMthds.isActiveOnly();
+				
+				//TC No. - 19 --> Check Prospects Only Check box
+				custSrchMthds.prospectsOnly();
+				
+				//TC No. - 20 --> Check Include Reject Checkbox
+				custSrchMthds.includeReject();				
+				
+				//TC No. - 24 --> Edit Customer Last Name - Valid Edit
+				custSrchMthds.custLastNameEdit(testdata, context);
+				
+				//TC No. - 28 & 31--> Last Name Field - ECP Validations
+				custSrchMthds.lastNameECP(testdata, context);
+				
+				//TC No. - 34 --> View Customer Details
+				custSrchMthds.viewCustDetails(testdata, context);
+				
+				//TC No. - 44, 45, --> Open Attachment Popup {Errors work on it}
+				custSrchMthds.attachmentPopUp(testdata, context);
+				
+				//TC No. - 57, 58, 59, 60, 61, 62 --> Freeze {Errors work on it}
+				custSrchMthds.freeze(testdata, context);
+				
+				//TC No. - 71, 72, 74, 80, 82, 88, --> Activate{Errors work on it}
+				custSrchMthds.active(testdata, context);
+				
+				//TC No. - 101, 102, 103 --> Delete Customer - Authorized Customer
+				custSrchMthds.deleteCust(testdata, context);
+
+				//TC No. - 105 --> Logout
 				Thread.sleep(5000);
 				custSrchMthds.signOut();
 				
-				// EndTest
+			// EndTest
 				ExtentTestManager.endTest();
 				ExtentManager.getInstance().flush();
 			}		
@@ -110,23 +144,6 @@ public class AllScenarios_Cust_CustSearch extends Base_Class{
 			System.out.println(e);
 		}
 		
-		
-
-		
-		
-		
-		
-		//Fetch Customer by Customer ID
-		//NBFC_Methods.searchByCustId();
-			
-		//Fetch Customer by Parent Or Spouse Name
-		//NBFC_Methods.searchByParentOrSpouse();
-		
-		// EndTest
-//		Thread.sleep(5000);
-//		ExtentTestManager.endTest();
-//		ExtentManager.getInstance().flush();
-		//driver.quit();
 	}
 	
 	@DataProvider(name = "TestData")
